@@ -36,6 +36,9 @@ class StackA:
             return None
         return self.storage.pop()
 
+    def peek(self):
+        return self.storage[-1]
+
 
 
 from linked_list import LinkedList
@@ -58,3 +61,8 @@ class StackL:
             return None
         self.size -= 1
         return self.storage.remove_head()
+
+    def peek(self):
+        return self.storage.head.get_value()
+
+    
