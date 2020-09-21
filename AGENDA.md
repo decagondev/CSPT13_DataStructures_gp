@@ -20,3 +20,13 @@
 - DATA STRUCTURE 3 ==> Talk about Queues Solution Implementation Using LinkedLists
 - DATA STRUCTURE 4 ==>  Talk about the concepts of Doubly Linked Lists
 - Wrap Up
+
+## Part 3 (BST and Solution for DLL)
+- DATA STRUCTURE 4 ==>  Talk about the solution of Doubly Linked Lists
+- DATA STRUCTURE 4 ==>  Make the solution of Doubly Linked Lists more DRY!
+- 5 min break
+- DATA STRUCTURE 5 ==> Introduction to Binary Search Trees
+- DATA STRUCTURE 5 ==> Research / Plan a Binary Search Tree
+- 5 min break
+- DATA STRUCTURE 5 ==> Review what do BST's look like?
+- Wrap Up
