@@ -72,7 +72,7 @@ class BSTNode:
                 return self.right.contains(target)
 
     # Return the maximum value found in the tree
-    def get_max(self):
+    def get_max(self): # Partial DFT
         # check for an empty tree
             # return None
 
@@ -104,11 +104,10 @@ class BSTNode:
         # return the max value
         return max_value
 
-    # Call the function `fn` on the value of each node
+    # Call the function `fn` on the value of each node (DFT)
     def for_each(self, fn):
         # call the function passing in the current nodes value
         fn(self.value)
-
         # if there is a node to the left
         if self.left:
             # call the function on the left value
@@ -124,16 +123,27 @@ class BSTNode:
     # Print all the values in order from low to high
     # Hint:  Use a recursive, depth first traversal
     def in_order_print(self):
+        # base case
+        # if there are no more nodes
+            # return
+        
+        # if there is a node to the left
+            # call in order print on the left
+        
+        # print the value of the current node (self.value)
+
+        # if there is a node to the right
+            # call in order print on the right
         pass
 
     # Print the value of every node, starting with the given node,
     # in an iterative breadth first traversal
-    def bft_print(self):
+    def bft_print(self): # use a queue
         pass
 
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
-    def dft_print(self):
+    def dft_print(self): # use a stack
         pass
 
     # Stretch Goals -------------------------

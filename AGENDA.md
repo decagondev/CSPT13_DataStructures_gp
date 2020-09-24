@@ -33,8 +33,8 @@
 
 ## Part 4 (Solution for BST Part 1)
 - DATA STRUCTURE 5 ==> Solution to the past 2 days of Binary Search Trees
-- DATA STRUCTURE 5 ==> Traversal Overview
 - 5 min break
+- DATA STRUCTURE 5 ==> Traversal Overview
 - DATA STRUCTURE 5 ==> Traversal Vs Search
 - DATA STRUCTURE 5 ==> DFT
 - 5 min break
