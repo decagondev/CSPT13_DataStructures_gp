@@ -22,70 +22,102 @@ class BSTNode:
     # Insert the given value into the tree
     def insert(self, value):
         # check if the new nodes value is less than the current nodes value
+        if value < self.value:
             # if there is no left child already here
+            if not self.left:
                 # add the new node to the left
                 # create a BSTNode and encapsulate the value in it then set it to the left
+                self.left = BSTNode(value)
             # otherwise call insert on the left node
+            else:
+                self.left.insert(value)
         # otherwise (the new nodes value is greaterthan or equal to the current node value)
+        else:
             # if there is no right child already here
+            if not self.right:
                 # add the new node to the right
                 # create a BSTNode and encapsulate the value in it then set it to the right
+                self.right = BSTNode(value)
             # otherwise call insert on the right node
-        pass
+            else:
+                self.right.insert(value)
 
     # Return True if the tree contains the value
     # False if it does not
     def contains(self, target):
         # if the value of the current node matches the target
+        if self.value == target:
             # return True
+            return True
 
         # check if the target is less than the current nodes value
+        if target < self.value:
             # if there is no left child already here
+            if not self.left:
                 # return False
+                return False
             # otherwise
+            else:
                 # return a call of contains on the left child passing in the target value
+                return self.left.contains(target)
         # otherwise (the target is greater than the current nodes value)
+        else:
             # if there is no right child already here
+            if not self.right:
                 # return False
+                return False
             # otherwise
+            else:
                 # return a call of contains on the right child passing in the target value
-        pass
+                return self.right.contains(target)
 
     # Return the maximum value found in the tree
     def get_max(self):
         # check for an empty tree
             # return None
 
-        # ----------------------------------------------
-        # recursive approach
-        # check if there is no node to the right
-            # return the nodes value
-        # return a call to get max on the right child
-        # -----------------------------------------------
+        # # ----------------------------------------------
+        # # recursive approach
+        # # check if there is no node to the right
+        # if not self.right:
+        #     # return the nodes value
+        #     return self.value
+        # # return a call to get max on the right child
+        # return self.right.get_max()
+        # # -----------------------------------------------
 
         # iterative aproach
 
         # initialise the max value
-
+        max_value = self.value
         # get a ref to the current node
+        current_node = self
 
         # loop while there is still a current node
+        while current_node:
             # if the current value is greater than the max value, update the max value
+            if current_node.value > max_value:
+                max_value = current_node.value
             # move on to the next right node
+            current_node = current_node.right
         
         # return the max value
-        pass
+        return max_value
 
     # Call the function `fn` on the value of each node
     def for_each(self, fn):
         # call the function passing in the current nodes value
+        fn(self.value)
 
         # if there is a node to the left
+        if self.left:
             # call the function on the left value
+            self.left.for_each(fn)
         
         # if there is a node to the right
+        if self.right:
             # call the function on the right node
-        pass
+            self.right.for_each(fn)
 
     # Part 2 -----------------------
 

@@ -31,7 +31,7 @@
 - DATA STRUCTURE 5 ==> Review what do BST's look like?
 - Wrap Up
 
-Part 4 (Solution for BST Part 1)
+## Part 4 (Solution for BST Part 1)
 - DATA STRUCTURE 5 ==> Solution to the past 2 days of Binary Search Trees
 - DATA STRUCTURE 5 ==> Traversal Overview
 - 5 min break
